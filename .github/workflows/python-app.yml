@@ -28,5 +28,6 @@ jobs:
           git add template2x.png
           git add template.png
           git add art-botready.png
+          git add art-botready-2.png
           git commit -am "sync image"
           git push
