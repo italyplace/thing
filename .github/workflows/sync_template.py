@@ -7,8 +7,8 @@ canvasY = 6000
 
 x1 = 782
 y1 = 198
-x2 = 903 #new one 975
-y2 = 1073 #new one 1017
+x2 = 781 #new one 975
+y2 = 1017 #new one 1017
 # ts stores the time in seconds
 ts = time.time()
 
