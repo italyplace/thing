@@ -44,10 +44,7 @@ final_img2.save("template.png")
 
 fill_color = (69,42,0) 
 
-img_orig = img_orig.convert("RGBA")   # it had mode P after DL it from OP
-if img_orig.mode in ('RGBA', 'LA'):
-    background = Image.new(img_orig.mode[:-1], img_orig.size, fill_color)
-    background.paste(img_orig, img_orig.split()[-1]) # omit transparency
-    img_orig = background
-
-img_orig.save("art-botready.png")
+final_img_bot = Image.new('RGBA', (canvasX, canvasY))
+final_img_bot.paste(img,tl)
+final_img_bot.paste(img,tl2)
+final_img_bot.save("art-botready.png")
