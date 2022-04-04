@@ -47,4 +47,11 @@ fill_color = (69,42,0)
 final_img_bot = Image.new('RGBA', (canvasX, canvasY))
 final_img_bot.paste(img,tl)
 final_img_bot.paste(img2,tl2)
+
+left = x1
+top = y1
+right = 1082
+bottom = 1123
+final_img_bot = final_img_bot.crop((left, top, right, bottom))
+
 final_img_bot.save("art-botready.png")
