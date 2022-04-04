@@ -49,14 +49,26 @@ final_img_bot.paste(img,tl)
 final_img_bot.paste(img2,tl2)
 final_img_bot.save("art-botready.png")
 
-left = x1
-top = y1
-right = 1082
-bottom = 1123
 
-final_img_bot = Image.new('RGBA', (canvasX, canvasY))
-final_img_bot.paste(img,tl)
-final_img_bot.paste(img2,tl2)
+topleft1 = (x1, y1)
+topleft2 = (x2, y2)
+
+response = requests.get("https://raw.githubusercontent.com/italyplace/rplace/main/art.png?=" + str(ts))
+img = Image.open(BytesIO(response.content))
+bottomleft1 = (topleft1[0] + img.size[0], topleft1[1] + img.size[1])
+
+response2 = requests.get("https://raw.githubusercontent.com/italyplace/rplace/main/art-2.png?=" + str(ts))
+img2 = Image.open(BytesIO(response2.content))
+bottomleft2 = (topleft2[0] + img2.size[0], topleft2[1] + img2.size[1])
+
+left = min(topleft1[0], topleft2[0])
+top = min(topleft1[1], topleft2[1])
+right = max(bottomleft1[0], bottomleft2[0])
+bottom = max(bottomleft1[1], bottomleft2[1])
+
+final_img_bot = Image.new('RGBA', (2000, 2000))
+final_img_bot.paste(img,(x1, y1))
+final_img_bot.paste(img2,(x2, y2))
 final_img_bot = final_img_bot.crop((left, top, right, bottom))
 
 final_img_bot.save("art-botready-2.png")
