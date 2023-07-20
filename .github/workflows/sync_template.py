@@ -5,10 +5,10 @@ import time
 canvasX = 6000
 canvasY = 6000
 
-x1 = 782
-y1 = 198
-x2 = 781 #new one 975
-y2 = 1017 #new one 1017
+x1 = 275
+y1 = 0
+x2 = 0 #new one 975
+y2 = 0 #new one 1017
 # ts stores the time in seconds
 ts = time.time()
 
