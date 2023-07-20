@@ -2,13 +2,19 @@ from PIL import Image, ImageOps
 import requests
 from io import BytesIO
 import time
-canvasX = 6000
-canvasY = 6000
+canvasX = 3000
+canvasY = 3000
 
-x1 = 100
-y1 = 100
-x2 = 0 #new one 975
-y2 = 0 #new one 1017
+x1 = 275
+y1 = 0
+
+
+x1 = x1 + 500
+y1 = y1 + 500
+    
+
+x2 = 781 #new one 975
+y2 = 1017 #new one 1017
 # ts stores the time in seconds
 ts = time.time()
 
