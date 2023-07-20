@@ -6,7 +6,7 @@ canvasX = 6000
 canvasY = 6000
 
 x1 = 275
-y1 = 302
+y1 = 0
 x2 = 0 #new one 975
 y2 = 0 #new one 1017
 # ts stores the time in seconds
