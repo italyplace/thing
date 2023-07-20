@@ -13,8 +13,8 @@ x1 = x1 + 500
 y1 = y1 + 500
     
 
-x2 = 781 #new one 975
-y2 = 1017 #new one 1017
+x2 = -367 #new one 975
+y2 = 186 #new one 1017
 # ts stores the time in seconds
 ts = time.time()
 
