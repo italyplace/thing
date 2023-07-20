@@ -4,13 +4,13 @@
 // @version      0.4
 // @description  try to take over the canvas!
 // @author       oralekin
-// @match        https://hot-potato.reddit.com/embed*
+// @match        https://garlic-bread.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
 // @grant        none
 // ==/UserScript==
 if (window.top !== window.self) {
     window.addEventListener('load', () => {
-            document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].appendChild(
+            document.getElementsByTagName("garlic-bread-embed")[0].shadowRoot.children[0].getElementsByTagName("garlic-bread-canvas")[0].shadowRoot.children[0].appendChild(
         (function () {
             if (!Date.now) {
                 Date.now = function() { return new Date().getTime(); }
