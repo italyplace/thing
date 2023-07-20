@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Ritaly template
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.5
 // @description  try to take over the canvas!
 // @author       oralekin
 // @match        https://garlic-bread.reddit.com/embed*
@@ -10,6 +10,7 @@
 // ==/UserScript==
 if (window.top !== window.self) {
     window.addEventListener('load', () => {
+        debugger
             document.getElementsByTagName("garlic-bread-embed")[0].shadowRoot.children[0].getElementsByTagName("garlic-bread-canvas")[0].shadowRoot.children[0].appendChild(
         (function () {
             if (!Date.now) {
@@ -17,7 +18,7 @@ if (window.top !== window.self) {
             }
             const i = document.createElement("img");
             i.src = "https://github.com/italyplace/thing/raw/main/template.png?" + Date.now();
-            i.style = "position: absolute;left: 0;top: 0px;image-rendering: pixelated;width: 2000px;height: 2000px;";
+            i.style = "position: absolute;left: 0;top: 0px;image-rendering: pixelated;width: 1000px;height: 1000px;";
             i.id = "mcss-overlay"
             i.setAttribute("vis",1)
             console.log(i);
