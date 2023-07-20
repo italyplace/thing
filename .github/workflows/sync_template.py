@@ -5,9 +5,11 @@ import time
 canvasX = 3000
 canvasY = 3000
 
-x1 = 275
-y1 = 19
+#x1 = 275
+#y1 = 19
 
+x1 = -367
+y1 = 186
 
 x1 = x1 + 500
 y1 = y1 + 500
